@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css"/>
+    <title>portfolio Website</title>
+ <script>
+  function Faren()
+  {
+    var num=document.getElementById("num").value;
+    var f;
+    f=(9/5)*num+32;
+    document.getElementById("res").innerHTML=num+" in Farenheit is "+f.toPrecision(5);
+  }
+  function Cels()
+  {
+    var num=document.getElementById("num").value;
+    var c;
+    c=(5/9)*(num-32);       
+    document.getElementById("res").innerHTML=num+" in Celsius is "+c.toPrecision(5);   
+  }
+  function Clear()
+  {      
+    var num=document.getElementById("num");
+    if(num.value!="")
+    {
+      num.value="";
+    } 
+    document.getElementById("res").innerHTML="";    
+  }
+</script>
+    </head>
+    <body>
+        <div id="one">
+            <div id="two">
+                <h2 id="t">
+                    <i> Temperature Converter </i>
+                </h2>
+            </div>
+            <div id="three" >
+                    <h4 id="t"><marquee>Celsius to Farenheit Converter</marquee> </h4>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="content">
+              <h2>WELCOME ALL </h2><br>
+              <h3>Enter Temperature: <input id="num" style="border-radius: 10%; border-color: blue; background-color: #f7f6f6;" onfocus="clearinput(this)"></h3><br>
+              <h3>Result: <p  id="res" style="border-radius: 10%; border-color: blue;"></p></h3><br>
+              <button onclick="Faren()" style="float:left; margin-right: 20px; border-radius: 40%;width: 30%;height: 15%;background-color: rgb(86, 158, 239); color:white; border-color: rgb(10, 10, 10);"><h4>Farenheit</h4></button>
+              <button onclick="Cels()" style="float:left;margin-right: 20px; border-radius: 40%;width: 30%;height: 15%; background-color: rgb(56, 143, 242); color:white; border-color: rgb(10, 10, 10);"><h4>Celsius</h4></button>
+              <button onclick="Clear()" style="float:left;margin-right: 20px; border-radius: 40%;width: 25%;height: 15%; background-color: rgb(63, 63, 231); color:white; border-color: rgb(10, 10, 10);"><h4>Clear</h4></button><br><br>
+            </div>
+            <div class="container">
+              <div class="avatar">
+                    <img src="https://st2.depositphotos.com/2352483/7795/v/600/depositphotos_77959498-stock-illustration-thermometer-with-high-and-low.jpg" alt="Skytsunami" />
+              </div>
+</body>
+</html>
